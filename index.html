@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Mushalla Ar-Rahman</title>
+  </head>
+  <body>
+    <nav class="container">
+      <div class="logo">
+        <img src="img/logo.svg" alt="logo" />
+      </div>
+
+      <div class="hamburger">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="#fff"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg>
+      </div>
+      <div class="top-menu">
+        <div class="close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="#fff"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
+        <ul>
+          <li class="active"><a href="#">Beranda</a></li>
+          <li><a href="#">Kegiatan</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <a href="#" class="btn-rounded-full bg-green">Kirim Infak</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/hero-1.png" alt="img slide" />
+            <div class="text-hero">
+              <h2>MUSHALLA AR-RAHMAN</h2>
+              <h6>
+                Ladang Kaladi Rt. 04 Rw. 06 Kel. Sungai Sapih Kec. Kuranji Kota
+                Padang
+              </h6>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/pembangunan.jpg" alt="img slide" />
+            <div class="text-hero">
+              <h2>MUSHALLA AR-RAHMAN</h2>
+              <h6>
+                Ladang Kaladi Rt. 04 Rw. 06 Kel. Sungai Sapih Kec. Kuranji Kota
+                Padang
+              </h6>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/wirid.png" alt="img slide" />
+            <div class="text-hero">
+              <h2>MUSHALLA AR-RAHMAN</h2>
+              <h6>
+                Ladang Kaladi Rt. 04 Rw. 06 Kel. Sungai Sapih Kec. Kuranji Kota
+                Padang
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <div class="hero-hadits">
+      <img src="img/quote-left.svg" alt="quote" class="quote-left" />
+      <p>
+        Barangsiapa membangun masjid karena Allah, meski seukuran lubang tempat
+        burung qatha bertelur, maka Allah membangun untuknya rumah di surga” (HR
+        Ahmad dan Ibnu Abi Syaibah)
+      </p>
+      <img src="img/quote-right.svg" alt="quote" class="quote-right" />
+    </div>
+
+    <!-- Welcome section -->
+    <div class="welcome-section">
+      <div class="welcome-section__left">
+        <img src="img/assalamualaikum.svg" alt="assalamualaikum">
+        <article>
+          <p>Selamat Datang di website resmi Mushalla Ar-Rahman Ladang Kaladi.</p>
+          <p>Di website ini Bapak/Ibu dapat melihat kegiatan-kegiatan kami dan juga bisa menyalurkan infak/Sadaqah terbaik
+          Bapak/Ibu.</p>
+        </article>
+        <button class="btn-black show-popup-infak">KIRIM INFAK</button>
+      </div>
+      <div class="welcome-section__right">
+        <img src="img/pengurus.png" alt="pengurus">
+      </div>
+    </div>
+
+
+    <!-- Popup Kirim Infak -->
+    <div class="wrapper-popup">
+      <div class="backdrop"></div>
+      <div class="content-popup">
+        <svg xmlns="http://www.w3.org/2000/svg" class="close-popup h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#000"
+          stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <div class="content-popup__left">
+          <p>Nama Bank</p>
+          <p>No. Rekening</p>
+          <p>Atas Nama</p>
+        </div>
+        <div class="content-popup__right">
+          <p>: Bank BCA</p>
+          <p>: 1234567 8725</p>
+          <p>: Mushalla Ar-Rahman</p>
+        </div>
+      </div>
+    </div>
+ 
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

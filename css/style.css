@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+}
+
+@media (min-width: 320px) {
+  .welcome-section__left {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+  .welcome-section__left article {
+    margin: 15px 0;
+  }
+
+  .btn-black {
+    background-color: #262626;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .welcome-section__right img {
+    box-shadow: 0px 3px 8px 1px rgb(0 0 0 / 50%);
+    border-radius: 15px;
+  }
+
+  .welcome-section {
+    width: 80%;
+    margin: 40px auto;
+    background: #0A993C url(../img/pattern-green.png) no-repeat center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  .hero-hadits {
+    background-color: #262626;
+    color: #fff;
+    text-align: center;
+    width: 300px;
+    border-radius: 15px;
+    margin: -75px auto 0;
+    z-index: 9999;
+    position: relative;
+    padding: 28px;
+    box-sizing: border-box;
+    font-size: 12px;
+  }
+
+  .hero-hadits img {
+    position: absolute;
+    width: 37px;
+    z-index: 999999;
+  }
+
+  .quote-left {
+    top: -10px;
+    left: 18px;
+  }
+
+  .quote-right {
+    bottom: -10px;
+    right: 18px;
+  }
+
+  .d-none {
+    display: none !important;
+  }
+
+  .mySwiper {
+    border-bottom: 0.5em solid #0a993c;
+  }
+
+  .text-hero h6 {
+    font-weight: 400;
+  }
+
+  .swiper-slide:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .text-hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+    color: #fff;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-slide {
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .hamburger svg {
+    width: 35px;
+  }
+
+  .hamburger {
+    cursor: pointer;
+  }
+
+  .top-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .top-menu ul li {
+    text-align: center;
+    margin: 10px 0;
+    position: relative;
+  }
+
+  .btn-rounded-full {
+    padding: 8px 19px;
+    border-radius: 50px;
+  }
+
+  .top-menu ul li.active:before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    height: 3px;
+    background-color: #0a993c;
+    width: 30%;
+    transform: translateX(-50%);
+  }
+
+  .top-menu .btn-rounded-full {
+    margin-top: 10px;
+    display: inline-block;
+  }
+
+  .bg-green {
+    background-color: #0a993c;
+  }
+
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 9999999;
+    cursor: pointer;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .close svg {
+    width: 30px;
+  }
+
+  .top-menu {
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    bottom: 0;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    transition: 0.3s;
+  }
+
+  .wrapper-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999999;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+  }
+
+  .wrapper-popup.show {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+
+  .close-popup {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
+
+  .content-popup {
+    color: #000;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    width: 90%;
+    padding: 30px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .9);
+    z-index: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .content-popup {
+    width: 25em;
+  }
+
+  .welcome-section {
+    padding: 40px;
+  }
+
+  .hero-hadits {
+    width: 500px;
+    font-size: 14px;
+    margin: -65px auto 10px;
+  }
+
+  .swiper-slide {
+    height: 500px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 1024px) {
+  .welcome-section {
+    width: 890px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .welcome-section__left {
+    margin-bottom: 0;
+    margin-right: 40px;
+  }
+
+  .hero-hadits img {
+    width: 40px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .top-menu {
+    right: 0;
+    position: relative;
+    width: auto;
+    background-color: transparent;
+  }
+
+  .top-menu ul li {
+    display: inline-block;
+    margin: 0 0 0 30px;
+  }
+
+  .close {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .welcome-section {
+    padding: 60px;
+  }
+
+  .text-hero h2 {
+    font-size: 55px;
+  }
+
+  .text-hero {
+    width: 100%;
+  }
+
+  .text-hero h6 {
+    font-size: 20px;
+    line-height: 24px;
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .swiper-slide {
+    height: 700px;
+  }
+
+  .container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mySwiper {
+    border-bottom: 1em solid #0a993c;
+  }
+}
+
+@media (min-width: 1400px) {
+  .swiper-slide {
+    height: 900px;
+  }
+
+  .hero-hadits {
+    font-size: 16px;
+    padding: 60px 40px;
+    width: 600px;
+  }
+
+  .hero-hadits img {
+    width: 60px;
+  }
+}
