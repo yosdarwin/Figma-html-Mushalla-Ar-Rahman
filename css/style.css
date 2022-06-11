@@ -22,6 +22,69 @@ body {
 }
 
 @media (min-width: 320px) {
+    .item-footer {
+        padding: 15px 0;
+    }
+
+    .item-footer-1 {
+        padding-top: 0;
+        text-align: center;
+    }
+
+    .item-footer.item-footer-1 {
+    }
+
+    .logo-footer {
+        width: 200px;
+    }
+
+    .item-footer h3 {
+        color: #fff;
+        position: relative;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .item-footer h3:after {
+        content: "";
+        width: 50px;
+        height: 5px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+    }
+
+    .item-footer-2 ul {
+        list-style: none;
+        color: #fff;
+        padding-left: 20px;
+    }
+
+    .item-footer-2 i {
+        font-size: 25px;
+        width: 35px;
+    }
+
+    .item-footer-2 ul li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    .item-footer-2 ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    .item-footer-3 iframe {
+        width: 100%;
+        height: 200px;
+    }
+    footer {
+        background: #0a993c url(../img/pattern-green.png) repeat;
+        background-blend-mode: multiply;
+        padding: 40px 10%;
+    }
     .d-desktop {
         display: none;
     }
@@ -522,6 +585,27 @@ body {
 }
 
 @media (min-width: 1024px) {
+    footer {
+        padding: 40px 0;
+    }
+    .item-footer-3 iframe {
+        width: 100%;
+        height: 150px;
+    }
+
+    .container-fluid {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    }
+
+    .item-footer {
+        padding: 0 15px;
+    }
+
+    .item-footer-1 {
+        display: grid;
+        place-content: center;
+    }
     h2.title-section {
         font-size: 30px;
         margin-bottom: 45px;
@@ -639,7 +723,17 @@ body {
 }
 
 @media (min-width: 1200px) {
-    .wrapper-infak-section {
+    .item-footer-3 iframe {
+        width: 100%;
+        height: 250px;
+    }
+    .item-footer-1 {
+        place-content: unset;
+        justify-content: center;
+        align-items: start;
+    }
+    .wrapper-infak-section,
+    .outer-swiper-kegiatan {
         width: 890px;
     }
 
